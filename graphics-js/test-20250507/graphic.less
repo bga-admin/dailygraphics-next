@@ -1,0 +1,28 @@
+@import "./lib/base";
+
+.graphic img { pointer-events: none; }
+
+// ai2html artboard sizes
+@media screen and (min-width: 730px) {
+    #g-_ai2html-map-small, #g-_ai2html-map-medium { display: none; }
+}
+
+@media screen and (max-width: 729px) and (min-width: 500px) {
+    #g-_ai2html-map-small, #g-_ai2html-map-wide { display: none; }
+}
+
+@media screen and (max-width: 499px) {
+    #g-_ai2html-map-medium, #g-_ai2html-map-wide { display: none; }
+}
+
+// Add custom styles here
+.g-lower-text {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #fff;
+    z-index:0;
+    stroke-linejoin: round;
+}
+
+.g-upper-text {
+    z-index: 1;
+}
