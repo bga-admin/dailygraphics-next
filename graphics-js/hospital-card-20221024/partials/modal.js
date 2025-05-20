@@ -56,7 +56,6 @@ export const modalFunctions = {
         modalContent.html(
             `
             <h2 class="modalTitle">${currentElement.getAttribute("data-NAME")}</h2>
-            <h2 class="modalTitle">${currentElement.getAttribute("data-SUED")}</h2>
 
             <div class="introContainer">
             <div class="modalContentGroup introText">
@@ -77,6 +76,8 @@ export const modalFunctions = {
             <h3 class="modalTitle">Financial assistance:</h3>
             <div class="modal__text"><span>Who qualifies for free care?</span> <span>${currentElement.getAttribute("data-FREE")}</span></div>
             <div class="modal__text"><span>Who qualifies for discounted care?</span> <span>${currentElement.getAttribute("data-DISCOUNT")}</span></div>
+            <div class="modal__text"><span>Provides aid to patients with very large medical bills?</span> <span>${currentElement.getAttribute("data-AID")}</span></div>
+
             <div class="modal__text"><span>Financial Assistance Policy available online?</span> 
             <span>
                 ${currentElement.getAttribute("data-FAPLINK") !== null && currentElement.getAttribute("data-FAPLINK") !== undefined && currentElement.getAttribute("data-FAPLINK") !== ""  ?

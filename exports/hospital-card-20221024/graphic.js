@@ -308,11 +308,11 @@
       break;
   }
 
-  var url$2 = "https://apps.npr.org/dailygraphics/graphics/fonts/js/lib/webfont.js";
-  var script$2 = document.createElement("script");
-  script$2.src = url$2;
-  document.head.appendChild(script$2);
-  script$2.onload = function () {
+  var url = "https://apps.npr.org/dailygraphics/graphics/fonts/js/lib/webfont.js";
+  var script = document.createElement("script");
+  script.src = url;
+  document.head.appendChild(script);
+  script.onload = function () {
     WebFont.load({
       custom: {
         families: ['Gotham SSm:n4,n7', 'Knockout 31 4r:n4'],
@@ -1165,7 +1165,6 @@
       //empty out the modalContent
       modalContent.html(`
             <h2 class="modalTitle">${currentElement.getAttribute("data-NAME")}</h2>
-            <h2 class="modalTitle">${currentElement.getAttribute("data-SUED")}</h2>
 
             <div class="introContainer">
             <div class="modalContentGroup introText">
@@ -1187,6 +1186,7 @@
             <div class="modal__text"><span>Who qualifies for free care?</span> <span>${currentElement.getAttribute("data-FREE")}</span></div>
             <div class="modal__text"><span>Who qualifies for discounted care?</span> <span>${currentElement.getAttribute("data-DISCOUNT")}</span></div>
             <div class="modal__text"><span>Provides aid to patients with very large medical bills?</span> <span>${currentElement.getAttribute("data-AID")}</span></div>
+
             <div class="modal__text"><span>Financial Assistance Policy available online?</span> 
             <span>
                 ${currentElement.getAttribute("data-FAPLINK") !== null && currentElement.getAttribute("data-FAPLINK") !== undefined && currentElement.getAttribute("data-FAPLINK") !== "" ? `<u><a href="${currentElement.getAttribute("data-FAPLINK")}">${currentElement.getAttribute("data-FAP")}</a></u>` : `${currentElement.getAttribute("data-FAP")}`}
@@ -1468,33 +1468,6 @@
     __proto__: null,
     modalFunctions: modalFunctions$1
   });
-
-  var url$1 = "https://apps.npr.org/dailygraphics/graphics/fonts/js/lib/webfont.js";
-  var script$1 = document.createElement("script");
-  script$1.src = url$1;
-  document.head.appendChild(script$1);
-  script$1.onload = function () {
-    WebFont.load({
-      google: {
-        families: ['Source Sans Pro:400,700']
-      },
-      timeout: 10000
-    });
-  };
-
-  var url = "https://apps.npr.org/dailygraphics/graphics/fonts/js/lib/webfont.js";
-  var script = document.createElement("script");
-  script.src = url;
-  document.head.appendChild(script);
-  script.onload = function () {
-    WebFont.load({
-      custom: {
-        families: ['Gotham SSm:n4,n7', 'Knockout 31 4r:n4'],
-        urls: ['https://s.npr.org/templates/css/fonts/GothamSSm.css', 'https://s.npr.org/templates/css/fonts/Knockout.css']
-      },
-      timeout: 10000
-    });
-  };
 
   var pym$1 = pym_1;
   var {

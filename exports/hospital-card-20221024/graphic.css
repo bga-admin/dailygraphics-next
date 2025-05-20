@@ -233,7 +233,7 @@ body {
 body.khn,
 body.khnSpanish {
   --chart-font: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  --chart-value-size: 14px;
+  --chart-value-size: 11px;
   --chart-value-weight: bold;
   --chart-value-color: #666;
   --title-font: 'Source Sans Pro', Helvetica, Arial, sans-serif;
@@ -261,21 +261,21 @@ body.khnSpanish {
   --bar-label-color: #333;
 }
 body.npr {
-  --chart-font: Helvetica, Arial, sans-serif;
-  --chart-value-size: 11px;
+  --chart-font: 'halyard-display', Halyard, Arial, sans-serif;
+  --chart-value-size: 13px;
   --chart-value-weight: normal;
-  --chart-value-color: #666;
-  --title-font: 'Gotham SSm', Helvetica, Arial, sans-serif;
-  --title-weight: normal;
+  --chart-value-color: #1a1a1a;
+  --title-font: 'halyard-display', Helvetica, Arial, sans-serif;
+  --title-weight: bold;
   --title-color: #666;
   --title-size: 20px;
-  --subtitle-font: 'Knockout 31 4r', Helvetica, Arial, sans-serif;
+  --subtitle-font: 'halyard-display', Helvetica, Arial, sans-serif;
   --subtitle-weight: normal;
   --subtitle-color: #666;
-  --subtitle-size: 12px;
+  --subtitle-size: 14px;
   --subhed-font: var(--chart-font);
   --subhed-weight: normal;
-  --subhed-size: 12px;
+  --subhed-size: 14px;
   --subhed-color: #777;
   --footer-style: italic;
   --footer-size: 11px;
@@ -286,6 +286,9 @@ body.npr {
   --bar-label-color: #666;
 }
 /* header styles */
+p {
+  font-size: var(--subtitle-size, 12px);
+}
 body {
   font-family: var(--chart-font, sans-serif);
 }
@@ -333,6 +336,9 @@ h3 {
 #bar-chart .labels li {
   font-size: var(--bar-label-size, 12px);
   color: var(--bar-label-color, #666);
+}
+select {
+  display: none;
 }
 text.in {
   font-weight: bold !important;
@@ -662,7 +668,7 @@ body.npr h1 {
 body.npr h1 + p {
   font-weight: normal;
   color: #777;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0 0 22px 0;
   line-height: 1.6;
   margin-left: auto;
